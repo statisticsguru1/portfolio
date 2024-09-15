@@ -21,21 +21,25 @@
         }
         .container {
             display: flex;
-            width: 80%;
+            flex-wrap: wrap;
+            width: 90%;
             margin: auto;
-            overflow: hidden;
+            padding: 20px;
+            box-sizing: border-box;
         }
         .main-content, .sidebar {
             padding: 20px;
+            box-sizing: border-box;
         }
         .main-content {
             flex: 3;
+            min-width: 300px;
         }
         .sidebar {
             flex: 1;
             background: #f4f4f4;
-            padding: 20px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            min-width: 250px;
         }
         .contact-info, .skills, .experience, .certifications {
             margin-bottom: 20px;
@@ -57,9 +61,8 @@
             color: #fff;
             text-align: center;
             padding: 10px 0;
-            position: fixed;
-            bottom: 0;
             width: 100%;
+            margin-top: 20px;
         }
         a {
             color: #FF7F00; /* Orange theme */
@@ -67,6 +70,25 @@
         }
         a:hover {
             text-decoration: underline;
+        }
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+            footer {
+                position: static;
+            }
+        }
+        @media (max-width: 400px) {
+            h1 {
+                font-size: 1.5rem;
+            }
+            .container {
+                padding: 10px;
+            }
+            .sidebar, .main-content {
+                padding: 10px;
+            }
         }
     </style>
 </head>
@@ -90,7 +112,7 @@
                         <ul>
                             <li>Performed thematic analysis on various datasets.</li>
                             <li>Implemented machine learning and statistical models for various applications.</li>
-                            <li>Developed software using Python (Django, Streamlit, Shiny), R (Shiny),React.js, HTML, CSS, and Javascript.</li>
+                            <li>Developed software using Python (Django, Streamlit, Shiny), R (Shiny), React.js, HTML, CSS, and Javascript.</li>
                         </ul>
                     </li>
                 </ul>
@@ -114,22 +136,22 @@
                     <li>OCR and Text Recognition</li>
                     <li>Video and Image Processing</li>
                     <li>Object Detection</li>
-                    <li>Software Development (Shiny, Django, Streamlit,React)</li>
+                    <li>Software Development (Shiny, Django, Streamlit, React)</li>
                     <li>Statistical Data Analysis (R, Python, SPSS, Stata, JMP, Eviews, Minitab)</li>
                 </ul>
             </section>
             <section class="certifications">
                 <h2>Certifications</h2>
                 <ul>
-                    <li>R(Intermediate) certificate - HackerRank</li>
+                    <li>R (Intermediate) certificate - HackerRank</li>
                     <li>Problem Solving (Intermediate) Certificate - HackerRank</li>
                     <li>Problem Solving (Basic) Certificate - HackerRank</li>
-                    <li>Python(Basic) Certificate - HackerRank</li>
-                    <li>R(Basic) certificate - HackerRank</li>
-                    <li>R Programming (Advanced)) - StudySection</li>
+                    <li>Python (Basic) Certificate - HackerRank</li>
+                    <li>R (Basic) certificate - HackerRank</li>
+                    <li>R Programming (Advanced) - StudySection</li>
                     <li>R Programming (Foundation) - StudySection</li>
-                    <li>Certificate in Statistical Package for the Social Sciences(SPSS)- NIBS Technical Collegee</li>
-                    <li>Certificate in MS computer packages- Wincadd Computer college</li>
+                    <li>Certificate in Statistical Package for the Social Sciences (SPSS) - NIBS Technical College</li>
+                    <li>Certificate in MS Computer Packages - Wincadd Computer College</li>
                 </ul>
             </section>
         </aside>
