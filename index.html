@@ -3,161 +3,284 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Festus Nzuma's Portfolio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background-color: #fff;
-        }
-        header {
-            background: #FF7F00; /* Orange theme */
-            color: #fff;
-            padding: 1rem 0;
-            text-align: center;
-        }
-        .container {
-            display: flex;
-            flex-wrap: wrap;
-            width: 90%;
-            margin: auto;
-            padding: 20px;
-            box-sizing: border-box;
-        }
-        .main-content, .sidebar {
-            padding: 20px;
-            box-sizing: border-box;
-        }
-        .main-content {
-            flex: 3;
-            min-width: 300px;
-        }
-        .sidebar {
-            flex: 1;
-            background: #f4f4f4;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            min-width: 250px;
-        }
-        .contact-info, .skills, .experience, .certifications {
-            margin-bottom: 20px;
-        }
-        h2 {
-            color: #333;
-            border-bottom: 2px solid #FF7F00; /* Orange theme */
-            padding-bottom: 5px;
-        }
-        ul {
-            list-style: none;
-            padding: 0;
-        }
-        ul li {
-            margin-bottom: 10px;
-        }
-        footer {
-            background: #333;
-            color: #fff;
-            text-align: center;
-            padding: 10px 0;
-            width: 100%;
-            margin-top: 20px;
-        }
-        a {
-            color: #FF7F00; /* Orange theme */
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        @media (max-width: 768px) {
-            .container {
-                flex-direction: column;
-            }
-            footer {
-                position: static;
-            }
-        }
-        @media (max-width: 400px) {
-            h1 {
-                font-size: 1.5rem;
-            }
-            .container {
-                padding: 10px;
-            }
-            .sidebar, .main-content {
-                padding: 10px;
-            }
-        }
-    </style>
+    <title>Portfolio</title>
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="scripts.js"></script>
 </head>
 <body>
     <header>
         <h1>Festus Nzuma</h1>
-        <p>Experienced Data Analyst and Software Developer</p>
+        <p>Data Analyst | Software Developer</p>
     </header>
-    <div class="container">
-        <div class="main-content">
-            <section class="summary">
-                <h2>Summary</h2>
-                <p>Experienced and highly motivated data analyst with a background in statistics. Proficient in various statistical data analysis processes, including research design, data collection, statistical visualization, modeling, reporting, and presentation. Seeking opportunities to apply expertise and contribute to data-driven decision-making processes.</p>
-            </section>
-            <section class="experience">
-                <h2>Experience</h2>
-                <ul>
-                    <li>
-                        <h3>Freelance Data Analyst at Fesnic Research Solutions</h3>
-                        <p>Jan 2017 - Present | Machakos, Kenya</p>
-                        <ul>
-                            <li>Performed thematic analysis on various datasets.</li>
-                            <li>Implemented machine learning and statistical models for various applications.</li>
-                            <li>Developed software using Python (Django, Streamlit, Shiny), R (Shiny), React.js, HTML, CSS, and Javascript.</li>
-                        </ul>
-                    </li>
-                </ul>
-            </section>
+ <!-- Hero Section -->
+ <section class="hero">
+    <div class="container hero-content">
+        <div class="hero-text">
+            <h2>About Me</h2>
+            <p>
+                I'm an experienced Data Analyst and Software Developer, proficient in leveraging technologies such as Python, Django, React.js, R, and Shiny. I specialize in developing data-driven applications, machine learning models, and conducting statistical analysis to deliver actionable insights for businesses.
+            </p>
+            <p>
+                With hands-on experience in full-stack development, cloud deployment, and using tools like SQL, Power BI, and Tableau, I build scalable solutions that drive business decisions. I am also well-versed in Agile methodologies like Scrum and Kanban, ensuring efficient and collaborative project delivery.
+            </p>
+            <p>
+                Whether it's applying machine learning models, creating dynamic web applications, or streamlining workflows, I am passionate about using data and modern software solutions to solve complex problems and drive innovation.
+            </p>
         </div>
-        <aside class="sidebar">
-            <section class="contact-info">
-                <h2>Contact Info</h2>
-                <ul>
-                    <li><i class="fas fa-envelope"></i> <a href="mailto:mutindafestus27@gmail.com">mutindafestus27@gmail.com</a></li>
-                    <li><i class="fab fa-github"></i> <a href="https://github.com/statisticsguru1">github.com/statisticsguru1</a></li>
-                    <li><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/festus-nzuma-26580163">LinkedIn</a></li>
-                    <li><i class="fas fa-phone"></i> +254706815783</li>
-                </ul>
-            </section>
-            <section class="skills">
-                <h2>Skills</h2>
-                <ul>
-                    <li>Machine Learning</li>
-                    <li>Deep Learning</li>
-                    <li>OCR and Text Recognition</li>
-                    <li>Video and Image Processing</li>
-                    <li>Object Detection</li>
-                    <li>Software Development (Shiny, Django, Streamlit, React)</li>
-                    <li>Statistical Data Analysis (R, Python, SPSS, Stata, JMP, Eviews, Minitab)</li>
-                </ul>
-            </section>
-            <section class="certifications">
-                <h2>Certifications</h2>
-                <ul>
-                    <li>R (Intermediate) certificate - HackerRank</li>
-                    <li>Problem Solving (Intermediate) Certificate - HackerRank</li>
-                    <li>Problem Solving (Basic) Certificate - HackerRank</li>
-                    <li>Python (Basic) Certificate - HackerRank</li>
-                    <li>R (Basic) certificate - HackerRank</li>
-                    <li>R Programming (Advanced) - StudySection</li>
-                    <li>R Programming (Foundation) - StudySection</li>
-                    <li>Certificate in Statistical Package for the Social Sciences (SPSS) - NIBS Technical College</li>
-                    <li>Certificate in MS Computer Packages - Wincadd Computer College</li>
-                </ul>
-            </section>
-        </aside>
+        <div class="hero-img">
+            <img src="www/IMG_20180523_160151.jpg" alt="Festus Nzuma">
+        </div>
     </div>
+</section>
+
+
+<!-- Skills Section -->
+<section class="skills">
+    <div class="container">
+        <h2>My Skills</h2>
+        <div class="skills-grid">
+            <!-- Statistical Skills -->
+            <div class="skill-card">
+                <h3>Statistical Skills</h3>
+                <ul>
+                    <li>📊 Research Design</li>
+                    <li>📥 Data Collection</li>
+                    <li>📈 Statistical Modeling</li>
+                    <li>📉 Visualization</li>
+                    <li>🔍 SPSS, R, Python, JMP, SQL</li>
+                    <li>📊 Excel, Power BI, Tableau</li>
+                </ul>
+            </div>
+            <!-- Software Development Skills -->
+            <div class="skill-card">
+                <h3>Software Development Skills</h3>
+                <ul>
+                    <li>💻 Full-stack Development</li>
+                    <li>🤖 Machine Learning</li>
+                    <li>🧠 Deep Learning</li>
+                    <li>🌐 Web App Development (Shiny, Django, Streamlit)</li>
+                    <li>☁️ Cloud Platforms (AWS, GCP, Microsoft Azure)</li>
+                    <li>🖥️ JavaScript, HTML, CSS</li>
+                    <li>🔧 Version Control (GitHub, GitLab workflows)</li>
+                    <li>⚙️ Agile Development Methodology (Scrum and Kanban)</li>
+                    <li>🗂️ GitHub Projects, CI/CD Pipelines</li>
+                </ul>
+            </div>
+            <!-- Machine Learning & Deep Learning -->
+            <div class="skill-card">
+                <h3>Machine Learning & Deep Learning</h3>
+                <ul>
+                    <li>📚 Machine Learning: Knn, SVM, Decision Trees, Random Forest, XGBoost, Neural Networks</li>
+                    <li>🧠 Deep Learning: Feature Extraction, Image/Video Classification, Object Detection (YOLO, CNNs, LSTMs)</li>
+                    <li>📝 NLP: Sentiment Analysis, Document Clustering</li>
+                    <li>🌍 Model Deployment & Infrastructure</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+   
+
+    <!-- Projects Section -->
+
+    <section class="projects">
+        <div class="container">
+            <h2>My Projects</h2>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <!-- Project 1 -->
+                    <div class="swiper-slide">
+                        <div class="project">
+                            <img src="www/cal.PNG" alt="E-Learn Platform">
+                            <h3>E-Learn Platform</h3>
+                            <p>
+                                An interactive platform that provides statistical calculators for students, built with Shiny and R to assist in learning statistics.
+                            </p>
+                            <a href="https://github.com/statisticsguru1/E_learn.git">View Project</a>
+                        </div>
+                    </div>
+                    <!-- Project 2 -->
+                    <div class="swiper-slide">
+                        <div class="project">
+                            <img src="www/assocs.PNG" alt="SME">
+                            <h3>Small and Medium-Sized Business Management System</h3>
+                            <p>
+                                A comprehensive platform aimed at helping SMEs manage their daily operations efficiently.
+                            </p>
+                            <a href="https://github.com/statisticsguru1/Small-and-Medium-Sized-Business-Management-System.git">View Project</a>
+                        </div>
+                    </div>
+                    <!-- Project 3 -->
+                    <div class="swiper-slide">
+                        <div class="project">
+                            <img src="www/pypackage.webp" alt="MyMLpackage">
+                            <h3>MyMLpackage</h3>
+                            <p>
+                                A Python package that provides specialized functions for various operations and settings related to machine learning training.
+                            </p>
+                            <a href="https://github.com/statisticsguru1/myMLpackage.git">View Project</a>
+                        </div>
+                    </div>
+                    <!-- Project 4 -->
+                    <div class="swiper-slide">
+                        <div class="project">
+                            <img src="www/Financ2.PNG" alt="Investment Group Management System">
+                            <h3>Investment Group Management System</h3>
+                            <p>
+                                A system for managing investment group operations, handling member registration, contributions, and more.
+                            </p>
+                            <a href="https://github.com/statisticsguru1/Chama_management.git">View Project</a>
+                        </div>
+                    </div>
+                    <!-- Project 5 -->
+                    <div class="swiper-slide">
+                        <div class="project">
+                            <img src="www/Capture105.PNG" alt="Correlation Analysis Web App">
+                            <h3>Correlation Analysis Web App</h3>
+                            <p>
+                                Analyzes correlations among ASX-listed Uranium and Lithium companies, providing visualizations and reports.
+                            </p>
+                            <a href="https://github.com/statisticsguru1/stock-correlapp.git">View Project</a>
+                        </div>
+                    </div>
+                    <!-- Project 6 -->
+                    <div class="swiper-slide">
+                        <div class="project">
+                            <img src="www/newsapp.PNG" alt="Hybrid Fake News Detection System">
+                            <h3>Hybrid Fake News Detection System</h3>
+                            <p>
+                                A hybrid news prediction system combining LSTM, K-means clustering, and Naive Bayes for fake news detection.
+                            </p>
+                            <a href="https://github.com/statisticsguru1/News_Reliability.git">View Project</a>
+                        </div>
+                    </div>
+                    <!-- Project 7 -->
+                    <div class="swiper-slide">
+                        <div class="project">
+                            <img src="www/Capture0.PNG" alt="Customizable ML Workflow Builder">
+                            <h3>Customizable ML Workflow Builder</h3>
+                            <p>
+                                A Streamlit-based web app to configure and automate machine learning pipelines using PyCaret.
+                            </p>
+                            <a href="https://github.com/statisticsguru1/MyStreamlitApp.git">View Project</a>
+                        </div>
+                    </div>
+                    <!-- Project 8 -->
+                    <div class="swiper-slide">
+                        <div class="project">
+                            <img src="www/Capture13.PNG" alt="Interactive Comparison of t-Distribution and Normal Distribution">
+                            <h3>Interactive Comparison of t-Distribution and Normal Distribution</h3>
+                            <p>
+                                Explore the t-distribution's characteristics and its relationship with the normal distribution interactively.
+                            </p>
+                            <a href="https://github.com/statisticsguru1/News_Reliability.git">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                <!-- Pagination dots -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+<!-- Certifications Section -->
+
+<section class="certifications container">
+    <h2>Certifications</h2>
+    <ul class="certifications-list">
+        <li>
+            <strong>Project Management (Foundation) Certificate</strong><br>
+            <span>StudySection | Jan 2025</span><br>
+            <span><a href="https://www.studysection.com/users/socialMedia/Nzg1NzQ1/bXV0aW5kYWZlc3R1czI3QGdtYWlsLmNvbQ%3D%3D">Credential ID: 785745</a></span>
+        </li>
+        <li>
+            <strong>Learn Node.js Course Certificate</strong><br>
+            <span>Codecademy | Sep 2024</span><br>
+            <span><a href="https://www.codecademy.com/profiles/blog4714544809/certificates/240305d50b925c17868f1ac7a21a3261">Credential ID: 66F6B7FD7F</a></span>
+        </li>
+        <li>
+            <strong>Learn JavaScript Course Certificate</strong><br>
+            <span>Codecademy | Sep 2024</span><br>
+            <span><a href="https://www.codecademy.com/profiles/blog4714544809/certificates/705dcb15de0da4dd9d9fc4f3274b430e">Credential ID: 66EC88274F</a></span>
+        </li>
+        <li>
+            <strong>Learn Intermediate JavaScript Course Certificate</strong><br>
+            <span>Codecademy | Sep 2024</span><br>
+            <span><a href="https://www.codecademy.com/profiles/blog4714544809/certificates/512386fdc7f6c934f98b01e6afa8285a">Credential ID: 66E30AAFDD</a></span>
+        </li>
+        <li>
+            <strong>R (Intermediate) Certificate</strong><br>
+            <span>HackerRank | Jul 2023</span><br>
+            <span><a href="https://www.hackerrank.com/certificates/903310c0ac36">Credential ID: 903310C0AC36</a></span>
+        </li>
+        <li>
+            <strong>R (Basic) Certificate</strong><br>
+            <span>HackerRank | May 2023</span><br>
+            <span><a href="https://www.hackerrank.com/certificates/f9403a2e51d4">Credential ID: F9403A2E51D4</a></span>
+        </li>
+        <li>
+            <strong>Python (Basic) Certificate</strong><br>
+            <span>HackerRank | May 2023</span><br>
+            <span><a href="https://www.hackerrank.com/certificates/98c3ec9efca2">Credential ID: 98C3EC9EFCA2</a></span>
+        </li>
+        <li>
+            <strong>Problem Solving (Basic) Certificate</strong><br>
+            <span>HackerRank | May 2023</span><br>
+            <span><a href="https://www.hackerrank.com/certificates/iframe/08928bdd2a1b">Credential ID: 08928BDD2A1B</a></span>
+        </li>
+        <li>
+            <strong>Problem Solving (Intermediate) Certificate</strong><br>
+            <span>HackerRank | May 2023</span><br>
+            <span><a href="https://www.hackerrank.com/certificates/iframe/2afb0045ab08">Credential ID: 2AFB0045AB08</a></span>
+        </li>
+        <li>
+            <strong>R Programming (Advanced) Certificate</strong><br>
+            <span>StudySection | May 2023</span><br>
+            <span><a href="https://www.studysection.com/users/socialMedia/NjY5OTYw/bXV0aW5kYWZlc3R1czI3QGdtYWlsLmNvbQ==">Credential ID: 669960</a></span>
+        </li>
+        <li>
+            <strong>R Programming (Foundation) Certificate</strong><br>
+            <span>StudySection | May 2023</span><br>
+            <span><a href="https://www.studysection.com/users/socialMedia/NjY5Nzky/bXV0aW5kYWZlc3R1czI3QGdtYWlsLmNvbQ==">Credential ID: 669792</a></span>
+        </li>
+        <li>
+            <strong>Certificate in Statistical Package for the Social Sciences (SPSS)</strong><br>
+            <span>Nairobi Institute of Business Studies | Ruiru, Kenya | Nov 2014</span><br>
+            <span>Credential ID: CERT/1318/14</span>
+        </li>
+        <li>
+            <strong>Certificate in Computer Packages</strong><br>
+            <span>WINCADD Computer College | Ruaraka, Kenya | July 2012 </span><br>
+            <span>Credential ID: WCT/024/12</span>
+        </li>
+    </ul>
+</section>
+
+<!-- Contact Section -->
+<section class="contact container">
+   <h2>Contact Me</h2>
+   <div style="width: 100%; height: 600px; overflow: hidden; position: relative;">
+     <iframe
+     src="https://statisticsguru1.shinyapps.io/my-contact-page/"
+     style="width: 60%; height: 90%; border: none; transform: scale(0.8); transform-origin: top left;">
+     </iframe>
+   </div>
+</section>
+    
+    
+    <!-- Footer Section -->
     <footer>
-        <p>&copy; 2024 Festus Nzuma. All rights reserved.</p>
+        <p>&copy; 2025 Festus Nzuma | <a href="https://github.com/statisticsguru1">GitHub</a> | <a href="https://www.linkedin.com/in/festus-nzuma-26580163">LinkedIn</a> | <a href="https://connect.posit.cloud/statisticsguru1">posit connect</a> | <a href="https://www.kaggle.com/mutindafestus">kaggle</a> | <a href="https://stackoverflow.com/users/9406005/mutinda-festus">stackoverflow</a> </p>
     </footer>
+    
 </body>
 </html>
