@@ -1,13 +1,26 @@
 /* General styles */
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #4CAF50;
+    color: white;
+
+}
+
+
 /* Hero Section */
 .hero {
     background-color: #4CAF50;
     color: white;
-    padding: 40px 20px;
+    padding: 0px 0px;
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 0;
+    position: relative;
+    padding-bottom: 0;
+    color: white;
 }
 
 .hero-content {
@@ -16,15 +29,22 @@
     align-items: center;
     justify-content: space-around;
     gap: 20px;
+    padding-bottom: 20px;
+    padding-top: 20px;
 }
 
 .hero-text {
-    max-width: 600px;
+    padding-bottom: 10px;
+    padding-top: 0;
+    align-content: left;
+    max-width: 700px;
 }
 
 .hero-text h2 {
     font-size: 2rem;
     margin-bottom: 15px;
+    margin-top: 0px;
+    padding-top: 0;
 }
 
 .hero-text p {
@@ -33,11 +53,46 @@
 }
 
 .hero-img img {
-    border-radius: 10px;
+    border-radius: 300px;
     max-width: 250px;
     height: auto;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+
+/* Hero Links Section */
+.hero-links {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem; /* Space between links */
+    position: absolute;
+    bottom: 0; /* Position the hero-links container at the bottom of the parent hero section */
+    left: 0; /* Ensure it spans the entire width of the hero section */
+    width: 100%; /* Take up full width of the hero section */
+    text-align: center;
+    background-color: #388E3C; /* Darker green background */
+    padding-top: 10px; /* Add some padding for spacing around the links */
+    padding-bottom:10px ;
+    border-radius: 0px 0px 0 0; /* Optional: rounded corners on top */
+}
+
+.hero-link {
+    text-decoration: none;
+    background-color: #0077cc;
+    color: white;
+    padding: 5px 10px; 
+    border-radius: 5px;
+    font-size: 1rem;
+    max-height: 100%;
+    max-width: 100%;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.hero-link:hover {
+    background-color: #005499;
+    transform: scale(1.05);
+}
+
+
 
 /* Skills Section */
 .skills {
@@ -110,14 +165,6 @@ body {
     padding: 0;
     background-color: #f9f9f9;
     color: #333;
-}
-
-/* Header styles */
-header {
-    text-align: center;
-    padding: 20px;
-    background-color: #4CAF50;
-    color: white;
 }
 
 /* Projects section */
@@ -237,6 +284,7 @@ header {
         flex: 0 0 100%;
     }
 }
+
 /* Contact Section */
 .contact {
     padding: 40px 20px;
